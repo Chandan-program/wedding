@@ -1884,6 +1884,176 @@ hr {
 
 }
 
+
+/* ===== Compact Wedding Invitation ===== */
+
+.nikah-cover {
+    width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* F&S Logo */
+.monogram-image {
+    width: 110px;
+    height: 90px;
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.monogram-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Small top heading */
+.nikah-caption {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.52rem;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    color: #E8C77B !important;
+    margin: 0 0 8px !important;
+}
+
+/* 1. Nikah Ceremony — largest title */
+.nikah-title {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(2rem, 7.5vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: #E8C77B !important;
+    margin: 0 0 5px !important;
+}
+
+/* 2. Of and Weds — small separators */
+.nikah-separator {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #E8C77B !important;
+    margin: 0 0 3px !important;
+}
+
+/* 3. Names — distinct calligraphy size */
+.nikah-name {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(2rem, 7.2vw, 2.35rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: #E8C77B !important;
+
+    width: 100%;
+    margin: 0 0 8px !important;
+    white-space: nowrap;
+}
+
+.nikah-with {
+    margin-top: 0 !important;
+    margin-bottom: 3px !important;
+}
+
+.nikah-name-last {
+    margin-bottom: 0 !important;
+}
+
+/* ===== Small mobile screens ===== */
+@media (max-width: 360px) {
+    .monogram-image {
+        width: 90px;
+        height: 74px;
+        margin-bottom: 9px;
+    }
+
+.nikah-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.6rem !important;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #E8C77B !important;
+    text-align: center;
+    margin: 0 0 6px !important;
+}
+
+    .nikah-name {
+        font-size: 1.85rem;
+    }
+
+    .nikah-caption {
+        font-size: 0.46rem;
+        letter-spacing: 1.1px;
+    }
+}
+
+
+/* Move complete content slightly upward */
+.invitation-page .nikah-cover {
+    transform: translateY(-15px) !important;
+}
+
+/* Reduce monogram size and bottom spacing */
+.invitation-page .monogram-image {
+    width: 95px;
+    height: 76px;
+    margin-bottom: 6px;
+}
+
+/* Caption spacing */
+.invitation-page .nikah-caption {
+    margin-bottom: 5px !important;
+    font-size: 0.48rem;
+}
+
+/* Nikah Ceremony */
+.invitation-page .nikah-title {
+    font-size: 2.15rem !important;
+    line-height: 1.05;
+    margin-bottom: 2px !important;
+}
+
+/* Of and Weds */
+.invitation-page .nikah-separator {
+    font-size: 0.82rem;
+    line-height: 1.1;
+    margin-bottom: 2px !important;
+}
+
+/* Both names */
+.invitation-page .nikah-name {
+    font-size: 2rem !important;
+    line-height: 1.05;
+    margin-bottom: 5px !important;
+}
+
+/* Weds spacing */
+.invitation-page .nikah-with {
+    margin-top: 0 !important;
+    margin-bottom: 2px !important;
+}
+
+/* Last name */
+.invitation-page .nikah-name-last {
+    margin-bottom: 0 !important;
+}
+
+
 </style>
     <script>/**
 * (c) Iconify
@@ -1926,6 +2096,9 @@ hr {
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&display=swap"
       rel="stylesheet">
+	
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -1966,35 +2139,35 @@ hr {
 
 <div class="invitation-page">
 
-    <div class="nikah-cover">
+    
+<div class="nikah-cover">
 
-        <div class="monogram-image">
-    <img src="image/FS-monogram.png" alt="F & S Wedding Monogram">
+    <div class="monogram-image">
+        <img src="image/FS-monogram.png" alt="F & S Wedding Monogram">
+    </div>
+
+    <p class="small-text tracking-wide nikah-caption">
+        PLEASE JOIN US TO CELEBRATE
+    </p>
+
+    <h1 class="nikah-title">Nikah Ceremony</h1>
+
+    <p class="nikah-separator">Of</p>
+
+    <h2 class="nikah-name">Farhat Khan</h2>
+
+    <p class="nikah-separator nikah-with">Weds</p>
+
+    <h2 class="nikah-name nikah-name-last">Sharikh Khan</h2>
+
 </div>
 
-        <p class="small-text tracking-wide nikah-caption">
-            PLEASE JOIN US TO CELEBRATE
-        </p>
-
-        <h1 class="nikah-title">Nikah Ceremony</h1>
-
-        <p class="nikah-separator">Of</p>
-
-        <h2 class="nikah-name">Farhat Khan</h2>
-
-        <p class="nikah-separator nikah-with">Weds</p>
-
-        <h2 class="nikah-name nikah-name-last">
-            Sharikh Khan
-        </h2>
-
-    </div>
 
     <!-- Scroll Indicator -->
-    <div class="scroll-indicator-containerS">
+    <!--div class="scroll-indicator-containerS">
         <div class="scroll-indicator-bar"></div>
         <span class="scroll-indicator-text">scroll</span>
-    </div>
+    </div-->
 
 </div>
 
@@ -2010,12 +2183,12 @@ hr {
               Mr. Father name &amp; Mrs. Mother name
 cordially invites your gracious presence with family on the auspicious occasion of the marriage of our daughter<br><br>
 
-                <b>Nyrah</b><br>
+                <b>Farhat</b><br>
 
                 <span style="display:block; text-align:center;">
                    Mr.Father name &amp; Mrs.Mother name<br>Place ,address            </span>
 
-                <br>with<br><b>Edin</b><br>
+                <br>with<br><b>Sharikh</b><br>
 
                 <span style="display:block; text-align:center;">
                     S/o Father name &amp; Mrs.Mother name<br>Place ,address              </span>
@@ -2025,18 +2198,18 @@ cordially invites your gracious presence with family on the auspicious occasion 
     </section>
 
     <!-- Scratch Page Section -->
-    <section class="scratch-section">
+    <!--section class="scratch-section">
         <div class="content-wrapper scroll-animate">
             <p class="reveal-text">Reveal</p>
             <p class="discover-text">SCRATCH TO<br>DISCOVER THE DATE</p>
 
             <div class="scratch-container">
                 <div class="scratch-card">
-                    <div class="scratch-base"><span class="scratch-date">1st</span></div>
+                    <div class="scratch-base"><span class="scratch-date">3st</span></div>
                     <canvas class="scratch-canvas" width="90" height="90"></canvas>
                 </div>
                 <div class="scratch-card">
-                    <div class="scratch-base"><span class="scratch-date">AUG</span></div>
+                    <div class="scratch-base"><span class="scratch-date">Dec</span></div>
                     <canvas class="scratch-canvas" width="90" height="90"></canvas>
                 </div>
                 <div class="scratch-card">
@@ -2045,7 +2218,7 @@ cordially invites your gracious presence with family on the auspicious occasion 
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
 
     <section class="venue-section">
         <div class="venue-container scroll-animate">
@@ -2083,7 +2256,7 @@ cordially invites your gracious presence with family on the auspicious occasion 
             <h2 class="venue-title" style="margin-bottom: 20px; font-size: 2.2rem; font-family: 'Marquis', serif; font-style: italic; font-weight: normal;"> Nikkah</h2>
             
             <div style="text-align: center; margin: 30px auto;">
-                <p class="timeline-time" style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; color: var(--text-primary);  letter-spacing: 1px; margin-bottom: 0;">11:30 AM</p>
+                <p class="timeline-time" style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; color: var(--text-primary);  letter-spacing: 1px; margin-bottom: 0;">08:30 AM</p>
             </div>
         </div>
     </section>
@@ -2128,11 +2301,7 @@ cordially invites your gracious presence with family on the auspicious occasion 
         </div>
     </section>
 
-    <div class="branding-bar" style="background-color: transparent; padding: 25px 15px; text-align: center; border: none !important;">
-        <a href="https://www.instagram.com/leora.invite/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--text-primary); font-family: 'Montserrat', sans-serif; font-size: 0.75rem; letter-spacing: 1.5px; opacity: 0.8;">
-            created with love - team.leora
-        </a>
-    </div>
+
 
     <script>document.addEventListener('DOMContentLoaded', () => {
     const video = document.getElementById('curtainVideo');
@@ -2424,7 +2593,7 @@ if (hiddenCountdown) {
 
 function setupCountdown() {
     // Current placeholder target date
-    const countdownDate = new Date("August 01, 2026 11:30:00").getTime();
+    const countdownDate = new Date("December 12, 2026 08:30:00").getTime();
     
     const dEl = document.getElementById("days");
     const hEl = document.getElementById("hours");
